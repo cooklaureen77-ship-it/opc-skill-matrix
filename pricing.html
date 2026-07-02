@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPC 矩阵 — 定价方案 | 内容自动化发布全平台方案</title>
+<meta name="description" content="OPC 内容自动化发布矩阵定价方案 - 覆盖百家号、小红书、知乎、今日头条四大平台的自动化内容发布工具。选择最适合您的方案。">
+<meta name="keywords" content="OPC定价,内容自动化,百家号发布,小红书发布,知乎发布,今日头条发布,内容运营工具">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="OPC 矩阵 - 定价方案 | 内容自动化发布全平台方案">
+<meta property="og:description" content="覆盖四大平台的自动化内容发布工具定价方案。入门版到企业定制版。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cooklaureen77-ship-it.github.io/opc-skill-matrix/pricing.html">
+<meta property="og:locale" content="zh_CN">
+<style>
+/* ============================================
+   1. Reset & Variables
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Brand palette — dark tech aesthetic */
+  --bg: #0B1120;
+  --bg-2: #131B2E;
+  --bg-3: #1A2440;
+  --surface: #16203A;
+  --surface-2: #1E2A4A;
+  --surface-hover: #243355;
+
+  --text: #E8EDF7;
+  --text-secondary: #A8B3CC;
+  --text-muted: #6B7896;
+  --text-dim: #4A5470;
+
+  --accent: #38BDF8;
+  --accent-2: #0EA5E9;
+  --accent-glow: rgba(56, 189, 248, 0.15);
+  --accent-glow-strong: rgba(56, 189, 248, 0.3);
+  --accent-bg: rgba(56, 189, 248, 0.08);
+
+  --green: #34D399;
+  --green-bg: rgba(52, 211, 153, 0.1);
+  --amber: #FBBF24;
+  --amber-bg: rgba(251, 191, 36, 0.1);
+  --rose: #FB7185;
+  --violet: #A78BFA;
+
+  --border: #233056;
+  --border-light: #1C2845;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 40px var(--accent-glow);
+
+  --container: 1200px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================
+   2. Base Styles
+   ============================================ */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(56, 189, 248, 0.08), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(167, 139, 250, 0.05), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+ul, ol { list-style: none; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   3. Typography
+   ============================================ */
+h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; letter-spacing: -0.02em; }
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  font-size: 36px;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+/* ============================================
+   4. Buttons
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.25s var(--ease);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: #0B1120;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px var(--accent-glow-strong);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+}
+.btn-outline:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.btn-ghost {
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.btn-block { width: 100%; }
+
+/* ============================================
+   5. Header & Navigation
+   ============================================ */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 17, 32, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.header.scrolled {
+  background: rgba(11, 17, 32, 0.95);
+  border-bottom-color: var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s var(--ease);
+}
+.nav-link:hover { color: var(--text); }
+.nav-link:hover::after { width: 100%; }
+
+.header-cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-cta .btn { padding: 9px 22px; font-size: 14px; }
+
+.nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s var(--ease);
+}
+.nav-toggle span::before,
+.nav-toggle span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.3s var(--ease);
+}
+.nav-toggle span::before { top: -6px; }
+.nav-toggle span::after { top: 6px; }
+.nav-toggle.open span { background: transparent; }
+.nav-toggle.open span::before { top: 0; transform: rotate(45deg); }
+.nav-toggle.open span::after { top: 0; transform: rotate(-45deg); }
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 24px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile .nav-link {
+  padding: 12px 0;
+  font-size: 16px;
+}
+.nav-mobile .btn { margin-top: 8px; }
+
+/* ============================================
+   6. Hero Section
+   ============================================ */
+.hero {
+  position: relative;
+  padding: 88px 0 48px;
+  text-align: center;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content { position: relative; z-index: 1; }
+
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: -0.035em;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #E8EDF7 0%, #A8B3CC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+/* Hero stats */
+.hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.hero-stat-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* Trust badges */
+.trust-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.trust-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   7. Billing Toggle
+   ============================================ */
+.billing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 40px 0 64px;
+}
+
+.billing-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.billing-toggle {
+  position: relative;
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px;
+}
+
+.toggle-option {
+  position: relative;
+  z-index: 2;
+  padding: 10px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.35s var(--ease);
+  border-radius: 999px;
+}
+.toggle-option.active { color: #0B1120; }
+
+.toggle-indicator {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: calc(100% - 10px);
+  width: calc(50% - 5px);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  border-radius: 999px;
+  transition: transform 0.35s var(--ease);
+  box-shadow: 0 2px 12px var(--accent-glow-strong);
+}
+.billing-toggle.annual .toggle-indicator {
+  transform: translateX(100%);
+}
+
+.toggle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  background: var(--green-bg);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+/* ============================================
+   8. Pricing Cards
+   ============================================ */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 80px;
+}
+
+.pricing-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s var(--ease), border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--border);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.pricing-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: var(--shadow-md);
+}
+
+.pricing-card[data-tier="starter"]::before { background: var(--violet); }
+.pricing-card[data-tier="standard"]::before { background: var(--accent); }
+.pricing-card[data-tier="pro"]::before { background: linear-gradient(90deg, var(--accent), var(--green)); }
+.pricing-card[data-tier="enterprise"]::before { background: var(--amber); }
+
+.pricing-card.featured {
+  border: 2px solid rgba(56, 189, 248, 0.4);
+  background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface) 100%);
+  box-shadow: 0 0 48px rgba(56, 189, 248, 0.1);
+  transform: translateY(-8px);
+}
+.pricing-card.featured:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 60px rgba(56, 189, 248, 0.15);
+}
+
+.card-badge {
+  position: absolute;
+  top: -1px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: #0B1120;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 0 0 8px 8px;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+
+.card-platforms {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.platform-tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-3);
+  color: var(--text-secondary);
+}
+.platform-tag.active {
+  color: var(--accent);
+  border-color: rgba(56, 189, 248, 0.3);
+  background: var(--accent-bg);
+}
+
+.plan-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.plan-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+.price-currency {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+.price-amount {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--text);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+.price-amount.updating {
+  opacity: 0;
+  transform: translateY(-6px);
+}
+.price-amount .unit {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: 2px;
+}
+.price-amount.custom {
+  font-size: 30px;
+}
+.price-period {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.price-note {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-bottom: 24px;
+  min-height: 20px;
+}
+.price-note.savings {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.card-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 -28px 24px;
+}
+
+.card-features {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.card-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.check-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--green);
+}
+.card-features li .check-icon.violet { color: var(--violet); }
+.card-features li .check-icon.amber { color: var(--amber); }
+
+.card-cta {
+  display: block;
+  text-align: center;
+  padding: 13px 24px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.25s var(--ease);
+  border: 1.5px solid var(--border);
+  background: var(--bg-3);
+  color: var(--text);
+}
+.card-cta:hover {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+.pricing-card.featured .card-cta {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  color: #0B1120;
+  border-color: transparent;
+}
+.pricing-card.featured .card-cta:hover {
+  box-shadow: 0 8px 24px var(--accent-glow-strong);
+}
+
+/* ============================================
+   9. Comparison Table
+   ============================================ */
+.comparison-section {
+  padding: 80px 0;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.comparison-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+}
+
+.comparison-table thead th {
+  padding: 22px 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-3);
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+.comparison-table thead th:first-child {
+  text-align: left;
+  padding-left: 24px;
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: var(--bg-3);
+  min-width: 220px;
+}
+.comparison-table thead th.featured-col {
+  background: var(--accent-bg);
+}
+.comparison-table thead th .plan-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.comparison-table thead th .plan-price {
+  display: block;
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.comparison-table tbody td {
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-light);
+}
+.comparison-table tbody td:first-child {
+  text-align: left;
+  padding-left: 24px;
+  font-weight: 500;
+  color: var(--text);
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+  z-index: 1;
+  min-width: 220px;
+}
+.comparison-table tbody td.featured-col {
+  background: var(--accent-bg);
+}
+.comparison-table tbody tr:hover td {
+  background: var(--surface-2);
+}
+.comparison-table tbody tr:hover td:first-child {
+  background: var(--surface-2);
+}
+.comparison-table tbody tr:hover td.featured-col {
+  background: rgba(56, 189, 248, 0.12);
+}
+.comparison-table tbody tr:last-child td { border-bottom: none; }
+
+/* Category group headers */
+.comparison-table .group-header td {
+  padding: 14px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--bg-3) !important;
+  text-align: left;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+.comparison-table .group-header td.featured-col {
+  background: var(--accent-bg) !important;
+}
+
+/* Icons in table cells */
+.cell-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: var(--green);
+}
+.cell-check svg { width: 18px; height: 18px; }
+
+.cell-cross {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  color: var(--text-dim);
+}
+.cell-cross svg { width: 16px; height: 16px; }
+
+.cell-text {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.cell-text.highlight { color: var(--accent); font-weight: 600; }
+.cell-text.muted { color: var(--text-dim); }
+
+.comparison-wrapper::-webkit-scrollbar { height: 6px; }
+.comparison-wrapper::-webkit-scrollbar-track { background: var(--bg-3); border-radius: 3px; }
+.comparison-wrapper::-webkit-scrollbar-thumb { background: var(--text-dim); border-radius: 3px; }
+
+/* ============================================
+   10. Value Props (trust section)
+   ============================================ */
+.value-section {
+  padding: 80px 0;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.value-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: border-color 0.3s ease, transform 0.3s var(--ease);
+}
+.value-card:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateY(-2px);
+}
+.value-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+.value-card h4 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+.value-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ============================================
+   11. FAQ Section
+   ============================================ */
+.faq-section {
+  padding: 80px 0;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+.faq-item:hover { border-color: rgba(56, 189, 248, 0.25); }
+.faq-item[open] {
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.2s ease;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--accent); }
+
+.faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  transition: transform 0.3s var(--ease);
+}
+.faq-icon svg { width: 18px; height: 18px; }
+.faq-item[open] .faq-icon { transform: rotate(45deg); }
+
+.faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s var(--ease);
+}
+.faq-item[open] .faq-answer-wrapper {
+  grid-template-rows: 1fr;
+}
+.faq-answer { overflow: hidden; }
+.faq-answer p {
+  padding: 0 24px 22px;
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+/* ============================================
+   12. CTA Banner
+   ============================================ */
+.cta-section {
+  padding: 80px 0;
+}
+
+.cta-banner {
+  position: relative;
+  background: linear-gradient(135deg, var(--bg-3) 0%, var(--surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 64px 48px;
+  text-align: center;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse at center, var(--accent-glow) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.cta-content { position: relative; z-index: 1; }
+.cta-banner h2 {
+  font-size: 36px;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+.cta-banner p {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============================================
+   13. Footer
+   ============================================ */
+.footer {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border-light);
+  padding: 64px 0 32px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+.footer-brand .logo { margin-bottom: 16px; }
+.footer-brand p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+.footer-social a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.25s ease;
+}
+.footer-social a:hover {
+  background: var(--accent-bg);
+  border-color: rgba(56, 189, 248, 0.3);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+.footer-social svg { width: 18px; height: 18px; }
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-col a {
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+.footer-col a:hover { color: var(--accent); }
+
+.footer-bottom {
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-bottom p {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+.footer-bottom-links a {
+  font-size: 13px;
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+.footer-bottom-links a:hover { color: var(--accent); }
+
+/* ============================================
+   14. Scroll Reveal
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ============================================
+   15. Responsive
+   ============================================ */
+@media (max-width: 1024px) {
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-card.featured { transform: none; }
+  .pricing-card.featured:hover { transform: translateY(-4px); }
+  .value-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .hero h1 { font-size: 40px; }
+}
+
+@media (max-width: 768px) {
+  .nav-desktop, .header-cta .btn { display: none; }
+  .nav-toggle { display: flex; }
+  .hero { padding: 56px 0 32px; }
+  .hero h1 { font-size: 32px; }
+  .hero p { font-size: 16px; }
+  .hero-stats { gap: 28px; }
+  .section-title { font-size: 28px; }
+  .section-subtitle { font-size: 15px; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto 64px; }
+  .value-grid { grid-template-columns: 1fr; }
+  .cta-banner { padding: 48px 24px; border-radius: var(--radius-lg); }
+  .cta-banner h2 { font-size: 26px; }
+  .cta-buttons { flex-direction: column; align-items: stretch; }
+  .cta-buttons .btn { width: 100%; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .trust-badges { gap: 14px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .hero h1 { font-size: 26px; }
+  .section-title { font-size: 24px; }
+  .pricing-card { padding: 28px 22px; }
+  .card-divider { margin: 0 -22px 20px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .faq-item summary { padding: 18px; font-size: 15px; }
+  .faq-answer p { padding: 0 18px 20px; font-size: 14px; }
+}
+
+/* ============================================
+   16. Accessibility
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================
+     Header
+     ============================================ -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="11" height="11" rx="2.5" fill="#38BDF8" opacity="0.3"/>
+          <rect x="18" y="3" width="11" height="11" rx="2.5" fill="#38BDF8" opacity="0.6"/>
+          <rect x="3" y="18" width="11" height="11" rx="2.5" fill="#38BDF8" opacity="0.8"/>
+          <rect x="18" y="18" width="11" height="11" rx="2.5" fill="#38BDF8"/>
+        </svg>
+        OPC 矩阵
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#comparison" class="nav-link">功能对比</a>
+        <a href="#pricing" class="nav-link">定价方案</a>
+        <a href="#faq" class="nav-link">常见问题</a>
+        <a href="#about" class="nav-link">关于我们</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#cta" class="btn btn-primary">联系销售</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#comparison" class="nav-link">功能对比</a>
+    <a href="#pricing" class="nav-link">定价方案</a>
+    <a href="#faq" class="nav-link">常见问题</a>
+    <a href="#about" class="nav-link">关于我们</a>
+    <a href="#cta" class="btn btn-primary btn-block">联系销售</a>
+  </nav>
+</header>
+
+<!-- ============================================
+     Main Content
+     ============================================ -->
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="pricing">
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-eyebrow">⚡ 定价方案</span>
+        <h1>选择适合你的自动化方案</h1>
+        <p>从单平台部署到全矩阵覆盖，OPC 为不同规模的内容团队提供灵活的交付方案。一次投入，长期收益。</p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">4</div>
+            <div class="hero-stat-label">主流平台覆盖</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">&lt;5s</div>
+            <div class="hero-stat-label">单篇发布耗时</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">3x</div>
+            <div class="hero-stat-label">失败自动重试</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">7</div>
+            <div class="hero-stat-label">统一流程步骤</div>
+          </div>
+        </div>
+
+        <div class="billing-section">
+          <div class="billing-toggle-wrapper">
+            <div class="billing-toggle" id="billingToggle">
+              <button class="toggle-option active" data-period="onetime">一次性买断</button>
+              <button class="toggle-option" data-period="annual">年度订阅</button>
+              <div class="toggle-indicator"></div>
+            </div>
+            <span class="toggle-badge">年付省 20%</span>
+          </div>
+        </div>
+
+        <div class="trust-badges">
+          <div class="trust-badge"><span class="dot"></span> PoC 验证后再签约</div>
+          <div class="trust-badge"><span class="dot"></span> 线上演示</div>
+          <div class="trust-badge"><span class="dot"></span> 持续适配服务</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="container">
+    <div class="pricing-grid">
+
+      <!-- Starter — ¥39,800 -->
+      <div class="pricing-card reveal" data-tier="starter">
+        <div class="card-platforms">
+          <span class="platform-tag active">选 1 个平台</span>
+          <span class="platform-tag">百家号 / 小红书 / 知乎 / 头条</span>
+        </div>
+        <h3 class="plan-name">入门版</h3>
+        <p class="plan-desc">适合单平台起步，验证自动化效果</p>
+        <div class="card-price">
+          <span class="price-currency">¥</span>
+          <span class="price-amount" data-onetime="39,800" data-annual="31,800">39,800<span class="unit"></span></span>
+        </div>
+        <p class="price-note" data-onetime-text="一次性买断" data-annual-text="年度订阅，立省 ¥8,000">一次性买断</p>
+        <div class="card-divider"></div>
+        <ul class="card-features">
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 1 个平台发布技能</li>
+          <li><svg class="check-icon violet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 自动封面生成</li>
+          <li><svg class="check-icon violet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Cookie 持久化管理</li>
+          <li><svg class="check-icon violet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 3 次失败自动重试</li>
+          <li><svg class="check-icon violet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 30 天部署支持</li>
+          <li><svg class="check-icon violet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 在线文档 + 社区支持</li>
+        </ul>
+        <a href="#cta" class="card-cta">咨询方案</a>
+      </div>
+
+      <!-- Standard — ¥59,800 -->
+      <div class="pricing-card reveal reveal-delay-1" data-tier="standard">
+        <div class="card-platforms">
+          <span class="platform-tag active">选 2 个平台</span>
+          <span class="platform-tag">百家号 + 小红书 等</span>
+        </div>
+        <h3 class="plan-name">标准版</h3>
+        <p class="plan-desc">双平台组合，覆盖图文 + 种草场景</p>
+        <div class="card-price">
+          <span class="price-currency">¥</span>
+          <span class="price-amount" data-onetime="59,800" data-annual="47,800">59,800<span class="unit"></span></span>
+        </div>
+        <p class="price-note" data-onetime-text="一次性买断" data-annual-text="年度订阅，立省 ¥12,000">一次性买断</p>
+        <div class="card-divider"></div>
+        <ul class="card-features">
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 2 个平台发布技能</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 自动封面 + 内容适配</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 草稿验证机制</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 失败截图 + 异常日志</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 60 天部署 + 运营支持</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 邮件技术支持</li>
+        </ul>
+        <a href="#cta" class="card-cta">咨询方案</a>
+      </div>
+
+      <!-- Pro — ¥79,800 (Featured) -->
+      <div class="pricing-card featured reveal reveal-delay-2" data-tier="pro">
+        <div class="card-badge">最受欢迎</div>
+        <div class="card-platforms">
+          <span class="platform-tag active">4 平台全覆盖</span>
+        </div>
+        <h3 class="plan-name">专业版</h3>
+        <p class="plan-desc">四大平台全矩阵，一次编写全平台分发</p>
+        <div class="card-price">
+          <span class="price-currency">¥</span>
+          <span class="price-amount" data-onetime="79,800" data-annual="63,800">79,800<span class="unit"></span></span>
+        </div>
+        <p class="price-note" data-onetime-text="一次性买断" data-annual-text="年度订阅，立省 ¥16,000">一次性买断</p>
+        <div class="card-divider"></div>
+        <ul class="card-features">
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 4 平台全矩阵发布技能</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 每平台独立适配层</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 3 秒自动封面生成（全规格）</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 多选择器兜底抗改版</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 90 天部署 + 运营支持</li>
+          <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 优先技术支持（8h 响应）</li>
+        </ul>
+        <a href="#cta" class="card-cta">立即咨询</a>
+      </div>
+
+      <!-- Enterprise — ¥99,800+ -->
+      <div class="pricing-card reveal reveal-delay-3" data-tier="enterprise">
+        <div class="card-platforms">
+          <span class="platform-tag active">定制</span>
+          <span class="platform-tag">含私有化部署</span>
+        </div>
+        <h3 class="plan-name">企业定制版</h3>
+        <p class="plan-desc">深度定制 + 私有化部署 + 专属服务</p>
+        <div class="card-price">
+          <span class="price-currency">¥</span>
+          <span class="price-amount custom" data-onetime="99,800" data-annual="79,800">99,800<span class="unit">起</span></span>
+        </div>
+        <p class="price-note" data-onetime-text="一次性买断，根据需求报价" data-annual-text="年度订阅，立省 ¥20,000">一次性买断，根据需求报价</p>
+        <div class="card-divider"></div>
+        <ul class="card-features">
+          <li><svg class="check-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 全矩阵 + 定制开发</li>
+          <li><svg class="check-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 私有化部署支持</li>
+          <li><svg class="check-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> CI/CD 内容流水线集成</li>
+          <li><svg class="check-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 可视化配置工具</li>
+          <li><svg class="check-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 专属客户经理 + 1 年运维</li>
+          <li><svg class="check-icon amber" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> SLA 保障 + 培训服务</li>
+        </ul>
+        <a href="#cta" class="card-cta">联系销售</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Value Props -->
+  <section class="value-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">✨ 核心价值</span>
+        <h2 class="section-title">为什么值得投入</h2>
+        <p class="section-subtitle">不是简单的脚本集合，而是经过工程化验证的完整内容运营基础设施。</p>
+      </div>
+      <div class="value-grid reveal">
+        <div class="value-card">
+          <div class="value-icon">🖥</div>
+          <h4>真实浏览器环境</h4>
+          <p>基于本地 Chrome 运行，行为与真实用户一致，0 风控风险。平台无法区分。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔧</div>
+          <h4>工程化质量</h4>
+          <p>模块化架构、retry 容错、分级日志，代码质量可直接纳入生产 CI 流水线。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📸</div>
+          <h4>失败可追溯</h4>
+          <p>每步出错自动截图留存 + 详细异常日志，问题排查从天级缩短到分钟级。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🛡</div>
+          <h4>抗平台变更</h4>
+          <p>多选择器兜底策略，页面改版也能自动适配运行。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📝</div>
+          <h4>草稿验证机制</h4>
+          <p>支持先保存草稿再人工确认，避免内容错误造成线上事故。</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📦</div>
+          <h4>轻量无依赖部署</h4>
+          <p>只需 Python 3.8+ 和系统 Chrome，无需数据库、无需 API 密钥。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="comparison-section" id="comparison">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">📊 方案对比</span>
+        <h2 class="section-title">详细的方案功能对比</h2>
+        <p class="section-subtitle">一目了然地查看各方案包含的功能，选择最适合你团队需求的方案。</p>
+      </div>
+
+      <div class="comparison-wrapper reveal">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>功能 / 服务</th>
+              <th><span class="plan-label">入门版</span><span class="plan-price">¥39,800</span></th>
+              <th><span class="plan-label">标准版</span><span class="plan-price">¥59,800</span></th>
+              <th class="featured-col"><span class="plan-label">专业版</span><span class="plan-price">¥79,800</span></th>
+              <th><span class="plan-label">企业定制版</span><span class="plan-price">¥99,800起</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 平台覆盖 -->
+            <tr class="group-header">
+              <td colspan="5">平台覆盖</td>
+            </tr>
+            <tr>
+              <td>百家号发布</td>
+              <td><span class="cell-text muted">可选 1</span></td>
+              <td><span class="cell-text muted">可选 2</span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>小红书发布</td>
+              <td><span class="cell-text muted">可选 1</span></td>
+              <td><span class="cell-text muted">可选 2</span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>知乎发布</td>
+              <td><span class="cell-text muted">可选 1</span></td>
+              <td><span class="cell-text muted">可选 2</span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>今日头条发布</td>
+              <td><span class="cell-text muted">可选 1</span></td>
+              <td><span class="cell-text muted">可选 2</span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>覆盖平台数</td>
+              <td><span class="cell-text">1 个</span></td>
+              <td><span class="cell-text">2 个</span></td>
+              <td class="featured-col"><span class="cell-text highlight">4 个</span></td>
+              <td><span class="cell-text highlight">4+ 定制</span></td>
+            </tr>
+
+            <!-- 核心功能 -->
+            <tr class="group-header">
+              <td colspan="5">核心功能</td>
+            </tr>
+            <tr>
+              <td>七步统一流水线</td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>自动封面生成</td>
+              <td><span class="cell-text">单平台规格</span></td>
+              <td><span class="cell-text">2 平台规格</span></td>
+              <td class="featured-col"><span class="cell-text highlight">全规格</span></td>
+              <td><span class="cell-text highlight">全规格 + 定制</span></td>
+            </tr>
+            <tr>
+              <td>内容自动适配</td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>Cookie 持久化管理</td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>失败自动重试</td>
+              <td><span class="cell-text">3 次</span></td>
+              <td><span class="cell-text">3 次</span></td>
+              <td class="featured-col"><span class="cell-text highlight">3 次 + 截图</span></td>
+              <td><span class="cell-text highlight">3 次 + 截图</span></td>
+            </tr>
+            <tr>
+              <td>多选择器兜底抗改版</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>草稿验证机制</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>异常截图 + 日志</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td class="featured-col"><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+
+            <!-- 高级功能 -->
+            <tr class="group-header">
+              <td colspan="5">高级功能</td>
+            </tr>
+            <tr>
+              <td>可视化配置工具</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>CI/CD 流水线集成</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>私有化部署</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>定制平台开发</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>多账号轮换支持</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-text">可选</span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+
+            <!-- 服务支持 -->
+            <tr class="group-header">
+              <td colspan="5">服务支持</td>
+            </tr>
+            <tr>
+              <td>部署支持周期</td>
+              <td><span class="cell-text">30 天</span></td>
+              <td><span class="cell-text">60 天</span></td>
+              <td class="featured-col"><span class="cell-text highlight">90 天</span></td>
+              <td><span class="cell-text highlight">1 年</span></td>
+            </tr>
+            <tr>
+              <td>技术支持方式</td>
+              <td><span class="cell-text">文档 + 社区</span></td>
+              <td><span class="cell-text">邮件</span></td>
+              <td class="featured-col"><span class="cell-text highlight">邮件 + 8h 响应</span></td>
+              <td><span class="cell-text highlight">专属经理</span></td>
+            </tr>
+            <tr>
+              <td>平台改版适配</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-text">3 个月内</span></td>
+              <td class="featured-col"><span class="cell-text">6 个月内</span></td>
+              <td><span class="cell-text highlight">1 年内</span></td>
+            </tr>
+            <tr>
+              <td>培训服务</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>SLA 服务保障</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+            <tr>
+              <td>专属客户经理</td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td class="featured-col"><span class="cell-cross"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></td>
+              <td><span class="cell-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">💬 常见问题</span>
+        <h2 class="section-title">定价相关常见问题</h2>
+        <p class="section-subtitle">关于方案定价和交付服务的所有疑问，在这里找到答案。</p>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>
+            <span>买断和年度订阅有什么区别？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>一次性买断方案包含完整的源代码交付、部署文档和约定周期的技术支持，买断后代码归你所有，可自行维护。年度订阅方案则以 20% 折扣提供首年使用权，包含持续的平台改版适配、远程技术支持和功能更新。订阅期间由我们负责维护，到期后可选择续订或转为买断。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>入门版和标准版的平台可以自由选择吗？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>可以。入门版从百家号、小红书、知乎、今日头条四个平台中任选 1 个；标准版任选 2 个。我们会根据你的内容定位推荐最优组合——例如品牌曝光选"百家号 + 头条"，种草营销选"小红书 + 知乎"。后续可补差价升级到更多平台或更高版本。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>交付周期大概多久？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>典型交付周期为 1-3 周。入门版通常 3-5 个工作日完成部署和测试；标准版 5-8 个工作日；专业版 7-12 个工作日（含四平台联调）；企业定制版视需求复杂度，一般 2-4 周。交付流程包括：需求诊断 → 环境部署 → 各平台登录授权 → 测试验证 → 上线运行。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>支持哪些付款方式？是否可以分期？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>支持对公转账、微信支付、支付宝以及企业微信付款，均提供正规增值税发票。企业定制版支持分期付款：签约付 50%，交付验收后付 30%，试运行 1 个月后付尾款 20%。标准版和专业版需签约时付全款，但提供 PoC 验证服务——签约前可先进行小范围试用确认效果。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>平台改版后还能继续使用吗？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>每个技能采用"多选择器兜底"设计，每个 UI 元素有 3-5 个备选定位方案，平台小幅改版通常不影响运行。对于较大改版，各版本提供不同周期的免费适配服务：标准版 3 个月内、专业版 6 个月内、企业版 1 年内免费适配。超出周期后可按次付费适配，单次费用约 ¥2,000-5,000。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>会被平台检测到并封号吗？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>方案基于本地已登录的 Chrome 浏览器运行，行为与真实用户完全一致——不是服务器端的批量 API 调用，平台无法区分。同时建议首先使用草稿模式验证内容，发布频率建议控制在合理范围内（单平台每天不超过 10 篇）。截至目前，所有客户使用期间未发生过因自动化导致的封号事件。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>后续升级方案怎么算费用？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>升级方案只需补差价即可。例如从入门版（¥39,800）升级到标准版（¥59,800），补 ¥20,000 差价即可。升级后新方案的服务周期从升级日起重新计算。如果原方案已超过免费适配周期，升级后适配服务周期也会同步更新。降级暂不支持，建议签约前充分沟通需求选择合适版本。</p>
+            </div>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>可以提供 PoC 验证或试用吗？</span>
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </summary>
+          <div class="faq-answer-wrapper">
+            <div class="faq-answer">
+              <p>可以。我们提供线上演示和 PoC 验证服务。线上演示通过远程会议展示完整发布流程，约 30 分钟。PoC 验证会在你的实际环境中部署 1 个平台、完成 1-2 篇真实发布测试，约 1-2 个工作日。PoC 验证费用 ¥5,000，签约后可抵扣方案费用。企业定制版客户可享受免费 PoC 验证服务。</p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-banner reveal" id="about">
+        <div class="cta-content">
+          <h2>让内容分发告别重复劳动</h2>
+          <p>立即联系我们，获取试用资格或了解更多方案细节。我们提供线上演示和 PoC 验证。</p>
+          <div class="cta-buttons">
+            <a href="https://xn--vhq3mw7mv0k9h0clnl.com/admin.php" class="btn btn-primary">联系销售团队</a>
+            <a href="#" class="btn btn-outline">预约线上演示</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================
+     Footer
+     ============================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="11" height="11" rx="2.5" fill="#38BDF8" opacity="0.3"/>
+            <rect x="18" y="3" width="11" height="11" rx="2.5" fill="#38BDF8" opacity="0.6"/>
+            <rect x="3" y="18" width="11" height="11" rx="2.5" fill="#38BDF8" opacity="0.8"/>
+            <rect x="18" y="18" width="11" height="11" rx="2.5" fill="#38BDF8"/>
+          </svg>
+          OPC 矩阵
+        </a>
+        <p>内容自动化发布全平台方案。百家号 · 小红书 · 知乎 · 今日头条——一次编写，多端分发。</p>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.16.58.67.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+          <a href="#" aria-label="邮箱">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="#" aria-label="文档">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>产品</h4>
+        <ul>
+          <li><a href="#comparison">功能对比</a></li>
+          <li><a href="#pricing">定价方案</a></li>
+          <li><a href="#">平台覆盖</a></li>
+          <li><a href="#">技术架构</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>公司</h4>
+        <ul>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#">帝苏百科</a></li>
+          <li><a href="#">加入我们</a></li>
+          <li><a href="#">联系我们</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="#">帮助中心</a></li>
+          <li><a href="#">技术文档</a></li>
+          <li><a href="#">SKILL.md</a></li>
+          <li><a href="#">社区论坛</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>法律</h4>
+        <ul>
+          <li><a href="#">服务条款</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">退款政策</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 OPC 内容自动化发布矩阵. 帝苏产业咨询出品.</p>
+      <div class="footer-bottom-links">
+        <a href="#">服务条款</a>
+        <a href="#">隐私政策</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  "use strict";
+
+  // ============================================
+  // Header scroll effect
+  // ============================================
+  var header = document.getElementById("header");
+
+  window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  }, { passive: true });
+
+  // ============================================
+  // Mobile navigation toggle
+  // ============================================
+  var navToggle = document.getElementById("navToggle");
+  var navMobile = document.getElementById("navMobile");
+
+  navToggle.addEventListener("click", function() {
+    navToggle.classList.toggle("open");
+    navMobile.classList.toggle("open");
+  });
+
+  navMobile.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      navToggle.classList.remove("open");
+      navMobile.classList.remove("open");
+    });
+  });
+
+  // ============================================
+  // Billing toggle (买断 / 年度订阅)
+  // ============================================
+  var billingToggle = document.getElementById("billingToggle");
+  var toggleOptions = billingToggle.querySelectorAll(".toggle-option");
+  var priceAmounts = document.querySelectorAll(".price-amount");
+  var priceNotes = document.querySelectorAll(".price-note");
+
+  function switchBillingPeriod(period) {
+    toggleOptions.forEach(function(btn) {
+      btn.classList.toggle("active", btn.dataset.period === period);
+    });
+    billingToggle.classList.toggle("annual", period === "annual");
+
+    priceAmounts.forEach(function(price) {
+      var onetime = price.dataset.onetime;
+      var annual = price.dataset.annual;
+      if (onetime === undefined || annual === undefined) return;
+
+      var newValue = period === "annual" ? annual : onetime;
+
+      // Preserve unit span if present
+      var unitSpan = price.querySelector(".unit");
+      var unitText = unitSpan ? unitSpan.textContent : "";
+
+      price.classList.add("updating");
+
+      setTimeout(function() {
+        if (unitSpan) {
+          price.innerHTML = newValue + '<span class="unit">' + unitText + "</span>";
+        } else {
+          price.textContent = newValue;
+        }
+        price.classList.remove("updating");
+      }, 200);
+    });
+
+    priceNotes.forEach(function(note) {
+      var onetimeText = note.dataset.onetimeText;
+      var annualText = note.dataset.annualText;
+      if (onetimeText === undefined) return;
+
+      note.textContent = period === "annual" ? annualText : onetimeText;
+      note.classList.toggle("savings", period === "annual");
+    });
+  }
+
+  toggleOptions.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      switchBillingPeriod(this.dataset.period);
+    });
+  });
+
+  // ============================================
+  // Scroll reveal animation
+  // ============================================
+  var revealElements = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+
+    revealElements.forEach(function(el) {
+      observer.observe(el);
+    });
+  } else {
+    revealElements.forEach(function(el) {
+      el.classList.add("revealed");
+    });
+  }
+
+  // ============================================
+  // FAQ accordion (single open)
+  // ============================================
+  var faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(function(item) {
+    item.addEventListener("toggle", function() {
+      if (item.open) {
+        faqItems.forEach(function(other) {
+          if (other !== item && other.open) {
+            other.open = false;
+          }
+        });
+      }
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
